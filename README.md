@@ -25,3 +25,22 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## GitHub Pages
+
+```sh
+ng run angular9-pwa:app-shell --configuration=production
+ng deploy --base-href=/angular9-pwa/ --noBuild
+```
+
+https://nao50.github.io/angular9-pwa
+
+
+## Make PWA
+```sh
+ng add @angular/pwa --project=angular9-pwa
+ng g app-shell --client-project=angular9-pwa
+ng add @angular/material
+
+ng run angular9-pwa:app-shell --configuration=production
+```
