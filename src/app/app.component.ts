@@ -84,17 +84,6 @@ export class AppComponent {
     });
   }
 
-  getNFC() {
-    const reader = new NDEFReader();
-    async function startScan() {
-      await reader.scan();
-      reader.onreading = (e) => {
-        console.log(e.message);
-        this.nfcInfo = e.message;
-      };
-    }
-  }
-
 }
 
 @Component({
