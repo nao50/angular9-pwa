@@ -8,8 +8,8 @@ import jsQR, { QRCode } from 'jsqr';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  @ViewChild('video', {static: true}) videoElm: ElementRef;
-  @ViewChild('canvas', {static: true}) canvasElm: ElementRef;
+  @ViewChild('video') videoElm: ElementRef;
+  @ViewChild('canvas') canvasElm: ElementRef;
 
   nfcInfo = '';
 
